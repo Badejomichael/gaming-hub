@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shooter Games</title>
+
+  <!-- bootstrap link -->
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+    crossorigin="anonymous"
+  />
+
+  <!-- css link -->
+   <link rel="stylesheet" href="../styles/game-category.css">
+</head>
+<body>
+  <!-- navbar -->
+  <header class="header">
+    <nav class="navbar navbar-expand-lg">
+      <div class="container px-4 px-lg-5">
+        <a href="../index.html" class="navbar-brand navbar-logo"><img src="../assests/gaming-logo.jpg" alt=""></a>
+        <button
+          class="navbar-toggler collapsed"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="navbar-collapse collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0 ms-lg-4">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="../index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../about.html">About Us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link nav-link-active" href="#">Game Reviews</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#latest-news-section">Latest Shooter Game News</a>
+            </li>
+          </ul>
+        </div>
+      </div>  
+    </nav>
+  </header>
+
+
+  <!-- hero section -->
+  <section class="hero-section shooter-hero-section">
+    <div class="container">
+      <div class="row">
+        <div class="hero-text">
+          <h1>Explore the Best Shooter Games</h1>
+          <p>Engage in intense firefights, strategic battles, and high-impact action.</p>
+        </div>
+
+        <div class="d-flex flex-column flex-sm-row w-100 gap-2">
+          <input id="search" type="text" class="search-input" placeholder="Search for Game...">
+          <button class="btn btn-dark search-btn js-search-form-btn" type="button">Search</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- search results section -->
+  <section class="search-result js-search-result">
+    <div class="container">
+      <div class="row search-result-header js-search-result-header">
+        <h3>Showing results of search.</h3>
+      </div>
+
+      <div class="container">
+        <div class="row search-result-row js-search-result-row">
+  
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+   <!-- shooter games section -->
+   <section class="shooter-games-section games-section">
+    <div class="container">
+      <div class="row js-shooter-games-row">
+
+        <div class="dots">
+          <div class="dot"></div>
+          <div class="dot"></div>
+          <div class="dot"></div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+
+    <!-- featured game -->
+    <section class="featured-game-section">
+      <div class="container">
+        <div class="row">
+          <div class="container hero-text">
+            <div class="row">
+              <h2>Featured Shooter Game of the Week</h2>
+            </div>
+          </div>
+    
+          <div class="container">
+            <div class="row featured-game-row js-featured-game-row">
+              
+              <div class="dots">
+                <div class="dot"></div>
+                <div class="dot"></div>
+                <div class="dot"></div>
+              </div>
+              
+            </div>
+          </div>
+        </div>
+      </div>
+      </section>
+
+
+      <!-- game news section -->
+      <section class="latest-games-news-section" id="latest-news-section">
+        <div class="container">
+          <div class="row">
+            <div class="container hero-text">
+              <div class="row">
+                <h2>Latest Shooter Games News</h2>
+              </div>
+            </div>
+      
+            <div class="container latest-news-container js-latest-news-container">
+
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+      <!-- go back game category section -->
+      <section class="last-section">
+        <div class="container">
+          <div class="row">
+            <a href="../index.html#genres" class="btn btn-light go-back-home">Explore Other Game Genres</a>
+          </div>
+        </div>
+      </section>
+
+
+  <!-- footer -->
+  <footer>
+      <div class="footer-row row">
+        <div class="footer1-div col-lg-4">
+          <div class="footer-brand-name">
+            <img class="footer-logo" src="../assests/gaming-logo.jpg" alt="">
+            <h3>Mikel's Gaming Hub</h3>
+          </div>
+          <p class="footer-brand-text">
+            Your ultimate destination for the latest game reviews, news, and insights. Stay updated, discover new adventures, and fuel your passion for gaming!" 🎮🔥
+          </p>
+        </div>
+
+        <div class="footer2-div col-lg-4">
+          <a href="../index.html">Home</a>
+          <a href="../about.html">About Us</a>
+          <a href="../reviews.html">Game Reviews</a>
+          <a href="../index.html#news-section">Latest News</a>
+          <a href="../index.html#upcoming-games-section">Upcoming Games</a>
+        </div>
+
+        <div class="footer3-div col-lg-4">
+          <form>
+            <h4>Subscribe to our newsletter</h4>
+            <p>Stay ahead of the game! Get the latest gaming news, reviews, and updates delivered straight to your inbox.</p>
+            <div class="d-flex flex-column flex-sm-row w-100 gap-2">
+              <label for="newsletter1" class="visually-hidden">Email address</label>
+              <input id="newsletter1" type="text" class="form-control" placeholder="Email address">
+              <button class="btn btn-dark subscribe-button type="button">Subscribe</button>
+            </div>
+          </form>
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="footer-icons">
+          <a href="#"><img src="../assests/facebook-icon.svg" alt=""></a>
+          <a href="#"><img src="../assests/instagram-icon.svg" alt=""></a>
+          <a href="#"><img src="../assests/twitter-icon.svg" alt=""></a>
+          <a href="#"><img src="../assests/youtube-icon.svg" alt=""></a>
+        </div>
+      </div>
+
+    
+  </footer>
+  
+
+
+
+  <!-- bootstrap script link -->
+  <script
+  src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+  integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+  crossorigin="anonymous"
+></script>
+
+<script type="module" src="../scripts/shooter-games.js"></script>
+
+</body>
+</html>
